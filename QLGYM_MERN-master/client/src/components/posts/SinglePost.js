@@ -30,7 +30,7 @@ const SinglePost = ({ post: { _id, status, title, description, url,user}  }) => 
 					</Col>
 					<Col className='text-right'>
 						<ActionButtons url={url} _id={_id} />
-						<p className='text-right'>ID :{user}</p>
+						<p className='text-right'>CODE :{user}</p>
 					</Col>
 				</Row>
 			</Card.Title>

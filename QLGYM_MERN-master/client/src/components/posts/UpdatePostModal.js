@@ -44,11 +44,14 @@ const UpdatePostModal = () => {
 	return (
 		<Modal show={showUpdatePostModal} onHide={closeDialog}>
 			<Modal.Header closeButton>
-				<Modal.Title>Making progress?</Modal.Title>
+				<Modal.Title>CHỈNH SỬA KHÓA TẬP  ?</Modal.Title>
 			</Modal.Header>
 			<Form onSubmit={onSubmit}>
 				<Modal.Body>
 					<Form.Group>
+					<Form.Text id='title-help' muted>
+							Tên khóa tập 
+						</Form.Text>
 						<Form.Control
 							type='text'
 							placeholder='Title'
@@ -57,9 +60,9 @@ const UpdatePostModal = () => {
 							aria-describedby='title-help'
 							value={title}
 							onChange={onChangeUpdatedPostForm}
-						/>
+						></Form.Control>
 						<Form.Text id='title-help' muted>
-							Discription
+							Nội dung khóa tập 
 						</Form.Text>
 					</Form.Group>
 					<Form.Group>
@@ -87,6 +90,9 @@ const UpdatePostModal = () => {
                        
 					</Form.Group>
 					<Form.Group>
+					<Form.Text id='title-help' muted>
+							Thông tin thêm 
+						</Form.Text>
 						<Form.Control
 							as='select'
 							value={status}
@@ -101,10 +107,10 @@ const UpdatePostModal = () => {
 				</Modal.Body>
 				<Modal.Footer>
 					<Button variant='secondary' onClick={closeDialog}>
-						Cancel
+						Hủy
 					</Button>
 					<Button variant='primary' type='submit'>
-						LearnIt!
+						Xác nhận 
 					</Button>
 				</Modal.Footer>
 			</Form>

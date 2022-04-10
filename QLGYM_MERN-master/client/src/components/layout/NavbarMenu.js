@@ -42,28 +42,28 @@ const NavbarMenu = () => {
 						to='/dashboard'
 						as={Link}
 					>
-						LịchTập/Schedule
+						LỊCH.TẬP 
 					</Nav.Link>
 					<Nav.Link
 						className='font-weight-bolder text-white'
 						to='/about'
 						as={Link}
 					>
-						XemThêm
+						XEM.THÊM
 					</Nav.Link>
 					<Nav.Link
 						className='font-weight-bolder text-white'
 						to='/trangchu'
 						as={Link}
 					>
-						TrangChu
+						TRANG.CHỦ
 					</Nav.Link>
 					
 				</Nav>
 
 				<Nav>
 					<Nav.Link className='font-weight-bolder text-black'
-                    style={{ marginLeft: 1100 }}  disabled>
+                    style={{ marginLeft: 500 }}  disabled>
                         
 						Xin Chào {username}!
 					</Nav.Link>

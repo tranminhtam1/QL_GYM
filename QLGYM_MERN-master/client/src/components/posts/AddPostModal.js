@@ -42,6 +42,7 @@ const AddPostModal = () => {
             </Modal.Header>
             <Form onSubmit={onSubmit}>
                 <Modal.Body>
+                <Form.Text id='title-help' muted> Tên khóa tập </Form.Text>
                     <Form.Group>
                         <Form.Control type ='text' placeholder='Tiêu Đề' name ='title' required aria-describedby='title-help'
                         value={title}
@@ -56,8 +57,8 @@ const AddPostModal = () => {
                         value={description}
                         onChange={onChangeNamePostForm} />
                      </Form.Group>
-                     <Form.Group>
-                         <Form.Control type = 'text' placeholder='Link video khóa tập' 
+                     <Form.Group> <Form.Text id='title-help' muted> Thêm Link khóa tập </Form.Text>
+                         <Form.Control type = 'text' placeholder='http//' 
                              name = 'url'
                              value={url}
                         onChange={onChangeNamePostForm}
